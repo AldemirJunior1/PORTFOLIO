@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --cor-primaria:     #000000;
     --cor-secundaria:   #f6f6f6;
-    --cor-terciaria:    #22D4FD;
+    --cor-terciaria:    #0073e6;
     --cor-hover:        #272727;
 
     --fonte-primaria: "Krona One", sans-serif;
@@ -55,6 +54,13 @@ body {
     gap: 40px; /*adicionar o espaçamento entre cada elemento. */
 }
 
+.apresentacao__curriculum__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
@@ -68,6 +74,16 @@ body {
     font-size: 1.5rem;
     font-family:var(--fonte-secundaria);
 }
+
+.apresentacao__curriculum__conteudo__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    
+}
+
 
 .apresentacao__links{
     display: flex;
@@ -92,6 +108,10 @@ body {
     font-family:var(--fonte-secundaria);
     font-weight: 600;
   
+}
+
+.apresentacao__links__curriculum {
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__links__navegacao:hover {
@@ -153,159 +173,3 @@ span {
 
 
 
-=======
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-    --cor-primaria:     #000000;
-    --cor-secundaria:   #f6f6f6;
-    --cor-terciaria:    #22D4FD;
-    --cor-hover:        #272727;
-
-    --fonte-primaria: "Krona One", sans-serif;
-    --fonte-secundaria: "Montserrat", sans-serif;
-}
-
-* {
-        margin: 0%;
-        padding: 0%;
-} /*reset css simples*/
-
-body {
-    box-sizing: border-box; /*Nada vai sair do espaço do body*/
-    /* height: 100vh;  /*ocupe 100% do view port (tela) do dispositivo*/  
-    background-color:var(--cor-primaria);
-    color: var(--cor-secundaria);   
-}
-
-.cabecalho {
-    padding: 2% 0% 0% 15%;
-}
-
-.cabecalho__menu {
-    display: flex;
-    gap: 80px;
-}
-
-.cabecalho__menu__link {
-    font-family:var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight:600;
-    color: var(--cor-terciaria);
-    text-decoration: none;
-}
-
-.apresentacao {
-    padding: 5% 15%;
-    display: flex;
-    align-items: center; /*centralizou nossos itens*/
-    justify-content: space-between;
-    gap: 82px;
-}
-
-.apresentacao__conteudo{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px; /*adicionar o espaçamento entre cada elemento. */
-}
-
-.apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
-    font-family: var(--fonte-primaria);
-}
-
-.titulo-destaque {
-    color: var(--cor-terciaria) ;
-}
-
-.apresentacao__conteudo__texto{
-    font-size: 1.5rem;
-    font-family:var(--fonte-secundaria);
-}
-
-.apresentacao__links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px; /* utilizada para definir o espaçamento entre os elementos de um grid ou flexbox*/
-}
-
-.apresentacao__links__navegacao {        
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    border : 2px solid var(--cor-terciaria); 
-    width: 50%;
-    text-align: center ;
-    border-radius: 8px;
-    font-size: 1.5rem;
-    padding: 21.5px 0;
-    text-decoration: none;  
-    color: var(--cor-secundaria);
-    font-family:var(--fonte-secundaria);
-    font-weight: 600;
-  
-}
-
-.apresentacao__links__navegacao:hover {
-    background-color:var(--cor-hover);
-}
-
-.apresentacao__imagem{
-    width: 50%;
-}
-
-
-.apresentacao__links__subtitulos{
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
-.rodape{
-    text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
-    font-weight: 400;
-    background-color: var(--cor-terciaria);
-    color: var(--cor-primaria);
-    padding: 24px;
-}
-
-.margin{
-    text-align: center;
-    font-family: var(--fonte-primaria);    
-}
-
-span {
-    color: var(--cor-secundaria);
-}
-
-@media (max-width: 1200px){
-    
-    .cabecalho{
-        padding: 10%;
-    }
-
-    .cabecalho__menu{
-        justify-content: center;
-    }
-
-    .apresentacao{
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-
-    .apresentacao__conteudo {
-        width: auto;
-    }
-}    
-
-
-
-
-
-
->>>>>>> 82612230e5767b8325ee66d79726ea65db06c10d
